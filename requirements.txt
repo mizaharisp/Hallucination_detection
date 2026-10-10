@@ -1,0 +1,3 @@
+# Evidence retrieval module. Teammates should merge their own entries.
+numpy
+sentence-transformers
