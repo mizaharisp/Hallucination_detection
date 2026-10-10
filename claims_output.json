@@ -1,0 +1,153 @@
+{
+  "query": "What is artificial intelligence",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim": "Artificial Intelligence (AI) is a branch of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence."
+    },
+    {
+      "claim_id": "C2",
+      "claim": "These tasks include things like:"
+    },
+    {
+      "claim_id": "C3",
+      "claim": "Reasoning and solving complex problems."
+    },
+    {
+      "claim_id": "C4",
+      "claim": "Recognizing patterns in data, sounds, or images."
+    },
+    {
+      "claim_id": "C5",
+      "claim": "Understanding natural language (reading and speaking)."
+    },
+    {
+      "claim_id": "C6",
+      "claim": "Making decisions or predictions."
+    },
+    {
+      "claim_id": "C7",
+      "claim": "Unlike traditional software, which strictly follows a rigid set of pre-written rules (\"if X happens, do Y\"), AI systems are designed to learn from data and adapt their behavior to new, unseen situations."
+    },
+    {
+      "claim_id": "C8",
+      "claim": "AI is generally categorized into three levels based on its capability:"
+    },
+    {
+      "claim_id": "C9",
+      "claim": "Narrow AI (Weak AI):"
+    },
+    {
+      "claim_id": "C10",
+      "claim": "What it is: AI designed to perform a single, specific task exceptionally well."
+    },
+    {
+      "claim_id": "C11",
+      "claim": "Status: This is the only type of AI that exists today."
+    },
+    {
+      "claim_id": "C12",
+      "claim": "Examples: Apple’s Siri, Google Maps, facial recognition, Netflix recommendations, and chess-playing computers."
+    },
+    {
+      "claim_id": "C13",
+      "claim": "Artificial General Intelligence (AGI / Strong AI):"
+    },
+    {
+      "claim_id": "C14",
+      "claim": "What it is: A theoretical type of AI that possesses human-level intelligence across all domains."
+    },
+    {
+      "claim_id": "C15",
+      "claim": "It could learn, reason, plan, and adapt to any intellectual task just as a human can."
+    },
+    {
+      "claim_id": "C16",
+      "claim": "Status: Does not yet exist; it is a major goal of current research."
+    },
+    {
+      "claim_id": "C17",
+      "claim": "What it is: A hypothetical future AI that vastly surpasses the collective intellect of all humans in creativity, problem-solving, emotional intelligence, and scientific discovery."
+    },
+    {
+      "claim_id": "C18",
+      "claim": "Think of modern AI as a set of nested concepts, like Russian nesting dolls:"
+    },
+    {
+      "claim_id": "C19",
+      "claim": "└── Machine Learning (ML)"
+    },
+    {
+      "claim_id": "C20",
+      "claim": "└── Deep Learning (DL)"
+    },
+    {
+      "claim_id": "C21",
+      "claim": "Machine Learning (ML): Instead of writing explicit code to solve a problem, engineers feed algorithms massive amounts of data."
+    },
+    {
+      "claim_id": "C22",
+      "claim": "The algorithm identifies patterns and \"learns\" how to make predictions or decisions on its own."
+    },
+    {
+      "claim_id": "C23",
+      "claim": "(Example: Showing an algorithm 100,000 photos of cats and dogs until it can tell them apart)."
+    },
+    {
+      "claim_id": "C24",
+      "claim": "Deep Learning (DL): A specialized subset of ML based on artificial neural networks (inspired by the structure of the human brain)."
+    },
+    {
+      "claim_id": "C25",
+      "claim": "It uses multiple layers of calculations to process complex data like video, audio, and written language."
+    },
+    {
+      "claim_id": "C26",
+      "claim": "Deep learning powers modern breakthroughs like self-driving cars and ChatGPT."
+    },
+    {
+      "claim_id": "C27",
+      "claim": "Generative AI: Tools like ChatGPT, Claude, and Midjourney that can generate human-like text, code, images, and audio from a simple prompt."
+    },
+    {
+      "claim_id": "C28",
+      "claim": "Navigation: Google Maps or Waze predicting traffic jams and calculating the fastest route in real time."
+    },
+    {
+      "claim_id": "C29",
+      "claim": "Digital Assistants: Siri, Google Assistant, and Alexa recognizing your voice and executing commands."
+    },
+    {
+      "claim_id": "C30",
+      "claim": "Recommendation Systems: Algorithms that predict what you want to watch (Netflix/YouTube), buy (Amazon), or listen to (Spotify)."
+    },
+    {
+      "claim_id": "C31",
+      "claim": "Healthcare: Algorithms that analyze X-rays, MRIs, and CT scans to detect diseases like cancer earlier and more accurately than the human eye."
+    },
+    {
+      "claim_id": "C32",
+      "claim": "Finance: Fraud-detection systems that flag suspicious credit card transactions instantly."
+    },
+    {
+      "claim_id": "C33",
+      "claim": "While AI has immense potential, it also brings significant challenges:"
+    },
+    {
+      "claim_id": "C34",
+      "claim": "Bias and Fairness: If an AI is trained on biased human data, it will produce biased results (e.g., discriminatory hiring algorithms)."
+    },
+    {
+      "claim_id": "C35",
+      "claim": "Job Displacement: Automation of routine cognitive and manual tasks may replace certain jobs faster than new ones are created."
+    },
+    {
+      "claim_id": "C36",
+      "claim": "Privacy: AI systems require vast amounts of personal data to train and function."
+    },
+    {
+      "claim_id": "C37",
+      "claim": "The \"Black Box\" Problem: Deep neural networks are often so complex that even the engineers who built them cannot explain why the AI made a specific decision."
+    }
+  ]
+}
