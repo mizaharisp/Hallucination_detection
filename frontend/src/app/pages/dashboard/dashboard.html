@@ -1,0 +1,252 @@
+<div class="dashboard">
+
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+      <div class="brand-icon">V</div>
+      <span>VeriEviX</span>
+    </div>
+
+    <button class="new-check">
+      <span>+</span>
+      New Verification
+    </button>
+
+    <div class="sidebar-section">
+      <p class="section-title">WORKSPACE</p>
+
+      <div class="sidebar-item active">
+        <span>⌕</span>
+        Verification
+      </div>
+
+      <div class="sidebar-item">
+        <span>◷</span>
+        History
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+
+      <div class="sidebar-item">
+        <span>⚙</span>
+        Settings
+      </div>
+
+      <div class="user-profile">
+        <div class="avatar">U</div>
+
+        <div>
+          <strong>User</strong>
+          <small>VeriEviX</small>
+        </div>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  
+  <main class="main-content">
+
+    <header class="topbar">
+
+      <div>
+        <h1>Verify Gemini Response</h1>
+        <p>Analyze claims using evidence-based verification.</p>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        System Ready
+      </div>
+
+    </header>
+
+
+    <section class="verification-container">
+
+     
+      <div class="input-section">
+
+        <label for="question">Enter your question</label>
+
+        <textarea
+          id="question"
+          [(ngModel)]="question"
+          placeholder="Ask something to Gemini..."
+        ></textarea>
+
+        <div class="input-footer">
+
+          <span>Gemini Response Verification</span>
+
+          
+<button
+  type="button"
+  class="verify-button"
+  (click)="verifyResponse()"
+  [disabled]="isLoading || !question.trim()">
+  {{ isLoading ? 'Verifying...' : 'Verify Response' }}
+</button>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- Results appear only after clicking Verify -->
+      @if (showResult) {
+
+        <!-- Gemini Response -->
+        <section class="result-section">
+
+          <div class="section-heading">
+
+            <div>
+              <h2>Gemini Response</h2>
+              <p>Generated response to be verified</p>
+            </div>
+
+          </div>
+
+          <div class="response-card">
+
+            <p>{{ geminiResponse }}</p>
+
+          </div>
+
+        </section>
+
+
+        <!-- Verification Analysis -->
+        <section class="result-section">
+
+          <div class="section-heading">
+
+            <div>
+              <h2>Verification Analysis</h2>
+              <p>Claim, evidence and verification results</p>
+            </div>
+
+          </div>
+
+
+          <div class="analysis-grid">
+
+            <!-- Claim -->
+            <div class="analysis-card">
+
+              <span class="card-label">
+                EXTRACTED CLAIM
+              </span>
+
+              <div class="claim-list">
+  <h3>Extracted Claims</h3>
+
+  @if (claims.length > 0) {
+    @for (item of claims; track item.claim_id) {
+      <div class="claim-card">
+        <strong>{{ item.claim_id }}</strong>
+        <p>{{ item.claim }}</p>
+      </div>
+    }
+  } @else {
+    <p>No claims were extracted.</p>
+  }
+</div>
+
+            </div>
+
+
+            <!-- Evidence -->
+            <div class="analysis-card">
+
+              <span class="card-label">
+                RETRIEVED EVIDENCE
+              </span>
+
+              <p>
+                {{ evidence }}
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Metrics -->
+          <div class="metrics">
+
+            <div class="metric-card">
+
+              <span>Semantic Similarity</span>
+
+              <strong>
+                {{ similarity }}
+              </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+              <span>NLI Classification</span>
+
+              <strong>
+                {{ nliLabel }}
+              </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+              <span>Confidence</span>
+
+              <strong>
+                {{ confidence }}%
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <!-- Final Result -->
+          <div class="final-result supported">
+
+            <div class="result-icon">
+              ✓
+            </div>
+
+            <div>
+
+              <span class="result-label">
+                FINAL VERDICT
+              </span>
+
+              <h2>
+                {{ finalResult }}
+              </h2>
+
+              <p>
+                {{ explanation }}
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      }
+
+    </section>
+
+  </main>
+
+</div>

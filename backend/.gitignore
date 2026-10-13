@@ -1,0 +1,29 @@
+# Python virtual environments
+.venv/
+.venv-py314-backup/
+venv/
+
+# Environment variables and API keys
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Generated output files
+evidence_embeddings.npz
+evidence_output.json
+demo_output.json
+claims_output.json
+
+# Dataset files
+data/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+.angular/
+
+# Logs
+*.log
